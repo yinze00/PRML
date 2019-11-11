@@ -7,7 +7,8 @@ from prml import (
     markov,
     nn,
     rv,
-    sampling
+    sampling,
+    sakura
 )
 
 
@@ -20,5 +21,7 @@ __all__ = [
     "markov",
     "nn",
     "rv",
-    "sampling"
+    "sampling",
+    "sakura"
+
 ]

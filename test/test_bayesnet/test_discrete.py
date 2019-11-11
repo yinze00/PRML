@@ -2,6 +2,7 @@ import unittest
 import numpy as np
 from prml import bayesnet as bn
 
+# prml.path.append(r"C:\Users\wangjunwei\source\repos\yinze00\PRML\prml")
 
 class TestDiscrete(unittest.TestCase):
 
@@ -11,7 +12,7 @@ class TestDiscrete(unittest.TestCase):
         self.assertTrue(np.allclose(b.proba, [0.18, 0.82]))
         a.observe(0)
         self.assertTrue(np.allclose(b.proba, [0.1, 0.9]))
-
+        
         a = bn.discrete([0.1, 0.9])
         b = bn.discrete([[0.7, 0.2], [0.3, 0.8]], a)
         c = bn.discrete([[0.8, 0.4], [0.2, 0.6]], b)
